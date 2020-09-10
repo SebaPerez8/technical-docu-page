@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Introducción a la Programación con Java</title>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>Introducción a la Programación con Java</header>
+        <ul>
+            <li><a href="#variables" class="nav-link">Variables</a></li>
+            <li><a href="#operadoresAA" class="nav-link">Operadores de Asignación y Aritméticos</a></li>
+            <li><a href="#operadoresIR" class="nav-link">Operadores Igualdad y Relacionales</a></li>
+            <li><a href="#seccion4" class="nav-link">Seccion 4</a></li>
+            <li><a href="#seccion5" class="nav-link">Seccion 5</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section class="main-class" id="variables">
+            <header>Variables</header>
+            <p>Las variables Java son un espacio de memoria en el que guardamos un determinado valor (o dato).</p>
+            <p>Java es un lenguaje de tipado estático. Por lo cual todas las variables tendrán un tipo de dato (ya sea
+                un tipo de dato primitivo o una clase) y un nombre de identificador.
+                El tipo de dato se asignará a la hora de definir la variable.</p>
+            <p>Ejemplos de variables:</p>
+            <code>
+                int numero = 2;
+                String cadena = "Hola";
+                long decimal = 2.4;
+                boolean flag = true;
+            </code>
+
+            <p>Los nombres de variables deben empezar por letra (mayúscula o minúscula),
+                un carácter de subrayado (_) o un signo pesos ($).</p>
+            <p>No pueden empezar con un número</p>
+            <p> No pueden contener puntuación, espacios o guiones (medios)</p>
+            <p> No pueden coincidir con palabras reservadas (como class o static) del
+                lenguaje</p>
+            <p> Por convención se utiliza notación de camello. En general la primer letra de
+                cada palabra se indica con mayúsculas excepto la primera. Por ejemplo:</p>
+            <code>
+                boolean estaVacio = true;
+            </code>
+
+            <ul>
+                <li> <strong>boolean</strong>: Sirve para definir tipos de datos booleanos. Es decir, aquellos que
+                    tienen un valor de true o false. Ocupa 1 bit de información.</li>
+                <li><strong>char</strong>:Es un tipo de datos que representa a un carácter Unicode sencillo de 16 bits.
+                </li>
+                <li><strong>byte</strong>:Representa un tipo de dato de 8 bits con signo. De tal manera que puede
+                    almacenar los valores numéricos de -128 a 127 (ambos inclusive).</li>
+                <li><strong>short</strong>:Representa un tipo de dato de 16 bits con signo. De esta manera almacena
+                    valores numéricos de -32.768 a 32.767.</li>
+                <li><strong>int</strong>:Es un tipo de dato de 32 bits con signo para almacenar valores numéricos. Cuyo
+                    valor mínimo es -231 y el valor máximo 231-1.</li>
+                <li><strong>long</strong>:Es un tipo de dato de 64 bits con signo que almacena valores numéricos entre
+                    -263 a 263-1</li>
+                <li><strong>float</strong>:Es un tipo dato para almacenar números en coma flotante con precisión simple
+                    de 32 bits.</li>
+                <li><strong>double</strong>:Es un tipo de dato para almacenar números en coma flotante con doble
+                    precisión de 64 bits.</li>
+            </ul>
+
+            <p>
+                Hay un tipo de dato <strong>String</strong> para el manejo de cadenas que no es en sí un tipo de dato
+                primitivo. Con el tipo de dato String podemos manejar cadenas de caracteres separadas por dobles
+                comillas.
+            </p>
+            <p>
+                El elemento String es un tipo de dato inmutable. Es decir, que una vez creado, su valor no puede ser
+                cambiado.
+            </p>
+            <p>
+                El String no es un tipo de dato primitivo del lenguaje Java. Pero su uso es igual de importante que el
+                de los tipos de datos revisados aquí. Veremos más en detalle el uso del tipo String.
+            </p>
+        </section>
+        <hr>
+        <br>
+        <section class="main-class" id="operadoresAA">
+            <header>Operadores de Asignación y Aritméticos </header>
+            <h4>Operador de Asignación</h4>
+            <p>El operador Java más sencillo es el operador de asignación. Mediante este operador se asigna un valor a
+                una variable. El operador de asignación es el símbolo igual.
+
+                La estructura del operador de asignación es:</p>
+            <code>
+                variable = valor;
+            </code>
+            <p>Así podemos asignar valores a variables de tipo entero, cadena, etc.</p>
+            <code>
+                int numero = 3;
+                String cadena = "Hola Mundo";
+                double decimal = 4.5;
+                boolean verdad = true;
+            </code>
+            <h4>Operadores Aritméticos</h4>
+            <p>Los operadores aritméticos en Java son los operadores que nos permiten realizar operaciones matemáticas:
+                suma, resta, multiplicación, división y resto.
+
+                Los operadores aritméticos en Java son:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>+</th>
+                        <th>Operador de Suma. Concatena cadenas para la suma de String</th>
+                    </tr>
+                    <tr>
+                        <th>-</th>
+                        <th>Operador de Resta</th>
+                    </tr>
+                    <tr>
+                        <th>*</th>
+                        <th>Operador de Multiplicación</th>
+                    </tr>
+                    <tr>
+                        <th>/</th>
+                        <th>Operador de División</th>
+                    </tr>
+                    <tr>
+                        <th>%</th>
+                        <th>Operador de Resto</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Los operadores aritméticos en Java los utilizaremos entre dos literales o variables y el resultado,
+                normalmente lo asignaremos a una variable o bien lo evaluamos.</p>
+            <code>
+                variable = (valor1|variable1) operador (valor2|variable2);
+            </code>
+            <p>Así podemos tener los siguientes usos en el caso de que queramos asignar su valor.</p>
+            <code>
+                suma = 3 + 7;             // Retorna 10
+                resta = 5 - 2;            // Retorna 3
+                multiplicacion = 3 * 2;   // Retorna 6
+                division = 4 / 2;         // Retorna 2
+                resto = 5 % 3;            // Retorna 2
+            </code>
+        </section>
+        <hr>
+        <br>
+        <section class="main-class" id="operadoresIR">
+            <header>Operadores Igualdad y Relacionales</header>
+            <p>Los operadores de igualdad y relacionales en Java son aquellos que nos permiten comparar el contenido de
+                una variable contra otra atendiendo a si son variables con un valor igual o distinto o bien si los
+                valores son mayores o menores.
+
+                El listado de operadores de igualdad y relacionales en Java es:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Operador</th>
+                        <th>Descripción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>==</th>
+                        <th>Igual a</th>
+                    </tr>
+                    <tr>
+                        <th>!=</th>
+                        <th>No igual a</th>
+                    </tr>
+                    <tr>
+                        <th>></th>
+                        <th>Mayor que</th>
+                    </tr>
+                    <tr>
+                        <th>>=</th>
+                        <th>Mayor o igual que</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            << /th>
+                        <th>Menor que</th>
+                    </tr>
+                    <tr>
+                        <th>
+                            <=< /th>
+                        <th>Menor igual que</th>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Mediante los operadores de igualdad podemos comprobar si dos valores son iguales (operador ==) o
+                diferentes (operador !=).
+
+                La estructura de los operadores de igualdad es la siguiente:</p>
+            <code>
+                vble1 == vble2
+                vble1 != vble2
+                </code>
+            <p></p>
+        </section>
+
+        <section class="main-class" id="seccion4">
+            <header>Seccion 4</header>
+            <p></p>
+            <code></code>
+            <p></p>
+        </section>
+
+        <section class="main-class" id="seccion5">
+            <header>Seccion 5</header>
+            <p></p>
+            <code></code>
+            <p></p>
+        </section>
+
+    </main>
+</body>
+
+</html>
